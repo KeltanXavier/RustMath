@@ -48,7 +48,7 @@ namespace RustMath
 
         private void cmdBack_Click(object sender, EventArgs e)
         {
-            this.Close(); //closes frmC4
+            this.Close(); //closes frmC4 
         }
 
     }
