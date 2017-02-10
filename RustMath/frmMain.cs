@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RustMath
+namespace RustMath //Version 1.0
 {
     public partial class frmMain : Form
     {
