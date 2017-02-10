@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RustMath
 {
-    public partial class frmC4 : Form
+    public partial class frmRocket : Form
     {
-        public frmC4()
+        public frmRocket()
         {
             InitializeComponent();
         }
@@ -20,36 +20,33 @@ namespace RustMath
          * Variables
          */
         int receiveAmount = 0;
-        int sulfur = 2200;
-        int charcoal = 3000;
-        int metalFrag = 200;
-        int animalFat = 180;
-        int cloth = 5;
-        int techTrash = 3;
-
+        int sulfur = 1250;
+        int charcoal = 1950;
+        int metalFrag = 180;
+        int animalFat = 24;
+        int cloth = 8;
         /*
-         * Functions
-         */ 
-        public void CalcResources()
+        * Functions/Methods
+        */
+        private void CalcResources() // receives amount of explosive from frmMain and calcs the resources required
         {
+            receiveAmount = frmMain.sendAmount;
             lblSulfur.Text = Convert.ToString(receiveAmount * sulfur);
             lblCharcoal.Text = Convert.ToString(receiveAmount * charcoal);
             lblMetalFrag.Text = Convert.ToString(receiveAmount * metalFrag);
             lblAnimalFat.Text = Convert.ToString(receiveAmount * animalFat);
-            lblCloth.Text = Convert.ToString(receiveAmount * cloth);
-            lblTechTrash.Text = Convert.ToString(receiveAmount * techTrash);
+            lblCloth.Text = Convert.ToString(receiveAmount * cloth); 
         }
-        private void frmC4_Load(object sender, EventArgs e)
+
+        private void frmRocket_Load(object sender, EventArgs e)
         {
-            receiveAmount = frmMain.sendAmount; //receives number of explosives from frmMain
-           //DEBUGGING ONLY MessageBox.Show(receiveAmount.ToString());
             CalcResources();
+            //MessageBox.Show(receiveAmount.ToString()); //DEBUGGING ONLY 
         }
 
-        private void cmdBack_Click(object sender, EventArgs e)
+        private void cmdBack_Click(object sender, EventArgs e) //closes form, duhhh..
         {
-            this.Close(); //closes frmC4
-
+            this.Close();
         }
     }
 }

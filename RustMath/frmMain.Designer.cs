@@ -310,6 +310,7 @@
             this.picRocket.Size = new System.Drawing.Size(63, 60);
             this.picRocket.TabIndex = 22;
             this.picRocket.TabStop = false;
+            this.picRocket.Click += new System.EventHandler(this.picRocket_Click);
             // 
             // picBeancan
             // 

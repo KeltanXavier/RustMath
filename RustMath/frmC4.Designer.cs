@@ -407,7 +407,7 @@
             this.Controls.Add(this.cmdBack);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmC4";
-            this.Text = "RustMath - Resource Calculator";
+            this.Text = "RustMath - Resource Calculator - C4";
             this.Load += new System.EventHandler(this.frmC4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picExplosive)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picIngredient1)).EndInit();

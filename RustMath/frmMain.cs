@@ -174,7 +174,11 @@ namespace RustMath
             MessageBox.Show("Welcome to RustMath! Please select which structure you'd like to destroy then click on the icon of your preferred method of destruction to see how many resources will be needed to craft the amount you require. Happy Raiding!");
         }
 
-
- 
+        private void picRocket_Click(object sender, EventArgs e)
+        {
+            sendAmount = Convert.ToInt32(lblRocket.Text);
+            frmMain frm = new frmMain();
+            (new frmRocket()).ShowDialog();
+        }
     }
 }
