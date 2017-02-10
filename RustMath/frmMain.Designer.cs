@@ -29,27 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            this.optWood = new System.Windows.Forms.RadioButton();
-            this.optSheet = new System.Windows.Forms.RadioButton();
-            this.optStone = new System.Windows.Forms.RadioButton();
-            this.optArmored = new System.Windows.Forms.RadioButton();
-            this.optWoodDoor = new System.Windows.Forms.RadioButton();
-            this.optStoneExternal = new System.Windows.Forms.RadioButton();
-            this.optSheetDoor = new System.Windows.Forms.RadioButton();
-            this.optArmoredDoor = new System.Windows.Forms.RadioButton();
-            this.optLadderHatch = new System.Windows.Forms.RadioButton();
-            this.optWoodExternal = new System.Windows.Forms.RadioButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.cmdRustMath = new System.Windows.Forms.Button();
+            this.picWoodWall = new System.Windows.Forms.PictureBox();
+            this.picStoneWall = new System.Windows.Forms.PictureBox();
+            this.picSheetWall = new System.Windows.Forms.PictureBox();
+            this.picArmoredWall = new System.Windows.Forms.PictureBox();
+            this.picSheetMetalDoor = new System.Windows.Forms.PictureBox();
+            this.picWoodDoor = new System.Windows.Forms.PictureBox();
+            this.picArmoredDoor = new System.Windows.Forms.PictureBox();
+            this.picLadderHatch = new System.Windows.Forms.PictureBox();
+            this.picWoodExternal = new System.Windows.Forms.PictureBox();
+            this.picStoneExternal = new System.Windows.Forms.PictureBox();
             this.picC4 = new System.Windows.Forms.PictureBox();
             this.picRocket = new System.Windows.Forms.PictureBox();
             this.picBeancan = new System.Windows.Forms.PictureBox();
@@ -65,16 +54,26 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.picWoodWall)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picStoneWall)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSheetWall)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picArmoredWall)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSheetMetalDoor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWoodDoor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picArmoredDoor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLadderHatch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWoodExternal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picStoneExternal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picC4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRocket)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBeancan)).BeginInit();
@@ -82,215 +81,105 @@
             ((System.ComponentModel.ISupportInitialize)(this.picSatchel)).BeginInit();
             this.SuspendLayout();
             // 
-            // optWood
+            // picWoodWall
             // 
-            this.optWood.AutoSize = true;
-            this.optWood.Location = new System.Drawing.Point(20, 72);
-            this.optWood.Name = "optWood";
-            this.optWood.Size = new System.Drawing.Size(78, 17);
-            this.optWood.TabIndex = 0;
-            this.optWood.TabStop = true;
-            this.optWood.Text = "Wood Wall";
-            this.optWood.UseVisualStyleBackColor = true;
+            this.picWoodWall.Image = ((System.Drawing.Image)(resources.GetObject("picWoodWall.Image")));
+            this.picWoodWall.Location = new System.Drawing.Point(35, 12);
+            this.picWoodWall.Name = "picWoodWall";
+            this.picWoodWall.Size = new System.Drawing.Size(63, 60);
+            this.picWoodWall.TabIndex = 10;
+            this.picWoodWall.TabStop = false;
+            this.picWoodWall.Click += new System.EventHandler(this.picWoodWall_Click);
             // 
-            // optSheet
+            // picStoneWall
             // 
-            this.optSheet.AutoSize = true;
-            this.optSheet.Location = new System.Drawing.Point(311, 72);
-            this.optSheet.Name = "optSheet";
-            this.optSheet.Size = new System.Drawing.Size(106, 17);
-            this.optSheet.TabIndex = 1;
-            this.optSheet.TabStop = true;
-            this.optSheet.Text = "Sheet Metal Wall";
-            this.optSheet.UseVisualStyleBackColor = true;
+            this.picStoneWall.Image = ((System.Drawing.Image)(resources.GetObject("picStoneWall.Image")));
+            this.picStoneWall.Location = new System.Drawing.Point(179, 12);
+            this.picStoneWall.Name = "picStoneWall";
+            this.picStoneWall.Size = new System.Drawing.Size(63, 60);
+            this.picStoneWall.TabIndex = 11;
+            this.picStoneWall.TabStop = false;
+            this.picStoneWall.Click += new System.EventHandler(this.picStoneWall_Click);
             // 
-            // optStone
+            // picSheetWall
             // 
-            this.optStone.AutoSize = true;
-            this.optStone.Location = new System.Drawing.Point(168, 72);
-            this.optStone.Name = "optStone";
-            this.optStone.Size = new System.Drawing.Size(77, 17);
-            this.optStone.TabIndex = 2;
-            this.optStone.TabStop = true;
-            this.optStone.Text = "Stone Wall";
-            this.optStone.UseVisualStyleBackColor = true;
+            this.picSheetWall.Image = ((System.Drawing.Image)(resources.GetObject("picSheetWall.Image")));
+            this.picSheetWall.Location = new System.Drawing.Point(330, 12);
+            this.picSheetWall.Name = "picSheetWall";
+            this.picSheetWall.Size = new System.Drawing.Size(63, 60);
+            this.picSheetWall.TabIndex = 12;
+            this.picSheetWall.TabStop = false;
+            this.picSheetWall.Click += new System.EventHandler(this.picSheetWall_Click);
             // 
-            // optArmored
+            // picArmoredWall
             // 
-            this.optArmored.AutoSize = true;
-            this.optArmored.Location = new System.Drawing.Point(474, 72);
-            this.optArmored.Name = "optArmored";
-            this.optArmored.Size = new System.Drawing.Size(88, 17);
-            this.optArmored.TabIndex = 3;
-            this.optArmored.TabStop = true;
-            this.optArmored.Text = "Armored Wall";
-            this.optArmored.UseVisualStyleBackColor = true;
+            this.picArmoredWall.Image = ((System.Drawing.Image)(resources.GetObject("picArmoredWall.Image")));
+            this.picArmoredWall.Location = new System.Drawing.Point(484, 12);
+            this.picArmoredWall.Name = "picArmoredWall";
+            this.picArmoredWall.Size = new System.Drawing.Size(63, 60);
+            this.picArmoredWall.TabIndex = 13;
+            this.picArmoredWall.TabStop = false;
+            this.picArmoredWall.Click += new System.EventHandler(this.picArmoredWall_Click);
             // 
-            // optWoodDoor
+            // picSheetMetalDoor
             // 
-            this.optWoodDoor.AutoSize = true;
-            this.optWoodDoor.Location = new System.Drawing.Point(630, 72);
-            this.optWoodDoor.Name = "optWoodDoor";
-            this.optWoodDoor.Size = new System.Drawing.Size(80, 17);
-            this.optWoodDoor.TabIndex = 4;
-            this.optWoodDoor.TabStop = true;
-            this.optWoodDoor.Text = "Wood Door";
-            this.optWoodDoor.UseVisualStyleBackColor = true;
+            this.picSheetMetalDoor.Image = ((System.Drawing.Image)(resources.GetObject("picSheetMetalDoor.Image")));
+            this.picSheetMetalDoor.Location = new System.Drawing.Point(35, 102);
+            this.picSheetMetalDoor.Name = "picSheetMetalDoor";
+            this.picSheetMetalDoor.Size = new System.Drawing.Size(63, 60);
+            this.picSheetMetalDoor.TabIndex = 14;
+            this.picSheetMetalDoor.TabStop = false;
+            this.picSheetMetalDoor.Click += new System.EventHandler(this.picSheetMetalDoor_Click);
             // 
-            // optStoneExternal
+            // picWoodDoor
             // 
-            this.optStoneExternal.AutoSize = true;
-            this.optStoneExternal.Location = new System.Drawing.Point(613, 162);
-            this.optStoneExternal.Name = "optStoneExternal";
-            this.optStoneExternal.Size = new System.Drawing.Size(118, 17);
-            this.optStoneExternal.TabIndex = 5;
-            this.optStoneExternal.TabStop = true;
-            this.optStoneExternal.Text = "Stone External Wall";
-            this.optStoneExternal.UseVisualStyleBackColor = true;
+            this.picWoodDoor.Image = ((System.Drawing.Image)(resources.GetObject("picWoodDoor.Image")));
+            this.picWoodDoor.Location = new System.Drawing.Point(641, 12);
+            this.picWoodDoor.Name = "picWoodDoor";
+            this.picWoodDoor.Size = new System.Drawing.Size(63, 60);
+            this.picWoodDoor.TabIndex = 15;
+            this.picWoodDoor.TabStop = false;
+            this.picWoodDoor.Click += new System.EventHandler(this.picWoodDoor_Click);
             // 
-            // optSheetDoor
+            // picArmoredDoor
             // 
-            this.optSheetDoor.AutoSize = true;
-            this.optSheetDoor.Location = new System.Drawing.Point(12, 162);
-            this.optSheetDoor.Name = "optSheetDoor";
-            this.optSheetDoor.Size = new System.Drawing.Size(108, 17);
-            this.optSheetDoor.TabIndex = 6;
-            this.optSheetDoor.TabStop = true;
-            this.optSheetDoor.Text = "Sheet Metal Door";
-            this.optSheetDoor.UseVisualStyleBackColor = true;
+            this.picArmoredDoor.Image = ((System.Drawing.Image)(resources.GetObject("picArmoredDoor.Image")));
+            this.picArmoredDoor.Location = new System.Drawing.Point(179, 102);
+            this.picArmoredDoor.Name = "picArmoredDoor";
+            this.picArmoredDoor.Size = new System.Drawing.Size(63, 60);
+            this.picArmoredDoor.TabIndex = 16;
+            this.picArmoredDoor.TabStop = false;
+            this.picArmoredDoor.Click += new System.EventHandler(this.picArmoredDoor_Click);
             // 
-            // optArmoredDoor
+            // picLadderHatch
             // 
-            this.optArmoredDoor.AutoSize = true;
-            this.optArmoredDoor.Location = new System.Drawing.Point(168, 162);
-            this.optArmoredDoor.Name = "optArmoredDoor";
-            this.optArmoredDoor.Size = new System.Drawing.Size(90, 17);
-            this.optArmoredDoor.TabIndex = 7;
-            this.optArmoredDoor.TabStop = true;
-            this.optArmoredDoor.Text = "Armored Door";
-            this.optArmoredDoor.UseVisualStyleBackColor = true;
+            this.picLadderHatch.Image = ((System.Drawing.Image)(resources.GetObject("picLadderHatch.Image")));
+            this.picLadderHatch.Location = new System.Drawing.Point(330, 102);
+            this.picLadderHatch.Name = "picLadderHatch";
+            this.picLadderHatch.Size = new System.Drawing.Size(63, 60);
+            this.picLadderHatch.TabIndex = 17;
+            this.picLadderHatch.TabStop = false;
+            this.picLadderHatch.Click += new System.EventHandler(this.picLadderHatch_Click);
             // 
-            // optLadderHatch
+            // picWoodExternal
             // 
-            this.optLadderHatch.AutoSize = true;
-            this.optLadderHatch.Location = new System.Drawing.Point(316, 163);
-            this.optLadderHatch.Name = "optLadderHatch";
-            this.optLadderHatch.Size = new System.Drawing.Size(90, 17);
-            this.optLadderHatch.TabIndex = 8;
-            this.optLadderHatch.TabStop = true;
-            this.optLadderHatch.Text = "Ladder Hatch";
-            this.optLadderHatch.UseVisualStyleBackColor = true;
+            this.picWoodExternal.Image = ((System.Drawing.Image)(resources.GetObject("picWoodExternal.Image")));
+            this.picWoodExternal.Location = new System.Drawing.Point(484, 102);
+            this.picWoodExternal.Name = "picWoodExternal";
+            this.picWoodExternal.Size = new System.Drawing.Size(63, 60);
+            this.picWoodExternal.TabIndex = 18;
+            this.picWoodExternal.TabStop = false;
+            this.picWoodExternal.Click += new System.EventHandler(this.picWoodExternal_Click);
             // 
-            // optWoodExternal
+            // picStoneExternal
             // 
-            this.optWoodExternal.AutoSize = true;
-            this.optWoodExternal.Location = new System.Drawing.Point(456, 162);
-            this.optWoodExternal.Name = "optWoodExternal";
-            this.optWoodExternal.Size = new System.Drawing.Size(119, 17);
-            this.optWoodExternal.TabIndex = 9;
-            this.optWoodExternal.TabStop = true;
-            this.optWoodExternal.Text = "Wood External Wall";
-            this.optWoodExternal.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(35, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 60);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(179, 6);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(63, 60);
-            this.pictureBox2.TabIndex = 11;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(330, 6);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(63, 60);
-            this.pictureBox3.TabIndex = 12;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(484, 6);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(63, 60);
-            this.pictureBox4.TabIndex = 13;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(35, 96);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(63, 60);
-            this.pictureBox5.TabIndex = 14;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(641, 6);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(63, 60);
-            this.pictureBox6.TabIndex = 15;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(179, 96);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(63, 60);
-            this.pictureBox7.TabIndex = 16;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(330, 96);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(63, 60);
-            this.pictureBox8.TabIndex = 17;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(484, 96);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(63, 60);
-            this.pictureBox9.TabIndex = 18;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(641, 95);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(63, 60);
-            this.pictureBox10.TabIndex = 19;
-            this.pictureBox10.TabStop = false;
-            // 
-            // cmdRustMath
-            // 
-            this.cmdRustMath.Location = new System.Drawing.Point(311, 203);
-            this.cmdRustMath.Name = "cmdRustMath";
-            this.cmdRustMath.Size = new System.Drawing.Size(106, 34);
-            this.cmdRustMath.TabIndex = 20;
-            this.cmdRustMath.Text = "Do Rust Math!";
-            this.cmdRustMath.UseVisualStyleBackColor = true;
-            this.cmdRustMath.Click += new System.EventHandler(this.cmdRustMath_Click);
+            this.picStoneExternal.Image = ((System.Drawing.Image)(resources.GetObject("picStoneExternal.Image")));
+            this.picStoneExternal.Location = new System.Drawing.Point(641, 101);
+            this.picStoneExternal.Name = "picStoneExternal";
+            this.picStoneExternal.Size = new System.Drawing.Size(63, 60);
+            this.picStoneExternal.TabIndex = 19;
+            this.picStoneExternal.TabStop = false;
+            this.picStoneExternal.Click += new System.EventHandler(this.picStoneExternal_Click);
             // 
             // picC4
             // 
@@ -442,9 +331,119 @@
             this.label5.TabIndex = 35;
             this.label5.Text = "Beancan grenade";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(12, 75);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(101, 16);
+            this.label6.TabIndex = 36;
+            this.label6.Text = "Wooden Wall";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(176, 75);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(83, 16);
+            this.label7.TabIndex = 37;
+            this.label7.Text = "Stone Wall";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(297, 75);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(125, 16);
+            this.label8.TabIndex = 38;
+            this.label8.Text = "Sheet Metal Wall";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(462, 75);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(102, 16);
+            this.label9.TabIndex = 39;
+            this.label9.Text = "Armored Wall";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(627, 75);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(104, 16);
+            this.label10.TabIndex = 40;
+            this.label10.Text = "Wooden Door";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(600, 164);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(143, 16);
+            this.label11.TabIndex = 41;
+            this.label11.Text = "Stone External Wall";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(450, 164);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(144, 16);
+            this.label12.TabIndex = 42;
+            this.label12.Text = "Wood External Wall";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(308, 165);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(101, 16);
+            this.label13.TabIndex = 43;
+            this.label13.Text = "Ladder Hatch";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(164, 165);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(105, 16);
+            this.label14.TabIndex = 44;
+            this.label14.Text = "Armored Door";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(12, 165);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(128, 16);
+            this.label15.TabIndex = 45;
+            this.label15.Text = "Sheet Metal Door";
+            // 
             // frmMain
             // 
             this.ClientSize = new System.Drawing.Size(745, 380);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -460,41 +459,30 @@
             this.Controls.Add(this.picBeancan);
             this.Controls.Add(this.picRocket);
             this.Controls.Add(this.picC4);
-            this.Controls.Add(this.cmdRustMath);
-            this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.optWoodExternal);
-            this.Controls.Add(this.optLadderHatch);
-            this.Controls.Add(this.optArmoredDoor);
-            this.Controls.Add(this.optSheetDoor);
-            this.Controls.Add(this.optStoneExternal);
-            this.Controls.Add(this.optWoodDoor);
-            this.Controls.Add(this.optArmored);
-            this.Controls.Add(this.optStone);
-            this.Controls.Add(this.optSheet);
-            this.Controls.Add(this.optWood);
+            this.Controls.Add(this.picStoneExternal);
+            this.Controls.Add(this.picWoodExternal);
+            this.Controls.Add(this.picLadderHatch);
+            this.Controls.Add(this.picArmoredDoor);
+            this.Controls.Add(this.picWoodDoor);
+            this.Controls.Add(this.picSheetMetalDoor);
+            this.Controls.Add(this.picArmoredWall);
+            this.Controls.Add(this.picSheetWall);
+            this.Controls.Add(this.picStoneWall);
+            this.Controls.Add(this.picWoodWall);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMain";
             this.Text = "RustMath - Raid Supply Calculator";
             this.Load += new System.EventHandler(this.frmMain_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWoodWall)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picStoneWall)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSheetWall)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picArmoredWall)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSheetMetalDoor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWoodDoor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picArmoredDoor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLadderHatch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWoodExternal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picStoneExternal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picC4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRocket)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBeancan)).EndInit();
@@ -506,28 +494,16 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.RadioButton optWood;
-        private System.Windows.Forms.RadioButton optSheet;
-        private System.Windows.Forms.RadioButton optStone;
-        private System.Windows.Forms.RadioButton optArmored;
-        private System.Windows.Forms.RadioButton optWoodDoor;
-        private System.Windows.Forms.RadioButton optStoneExternal;
-        private System.Windows.Forms.RadioButton optSheetDoor;
-        private System.Windows.Forms.RadioButton optArmoredDoor;
-        private System.Windows.Forms.RadioButton optLadderHatch;
-        private System.Windows.Forms.RadioButton optWoodExternal;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Button cmdRustMath;
+        private System.Windows.Forms.PictureBox picWoodWall;
+        private System.Windows.Forms.PictureBox picStoneWall;
+        private System.Windows.Forms.PictureBox picSheetWall;
+        private System.Windows.Forms.PictureBox picArmoredWall;
+        private System.Windows.Forms.PictureBox picSheetMetalDoor;
+        private System.Windows.Forms.PictureBox picWoodDoor;
+        private System.Windows.Forms.PictureBox picArmoredDoor;
+        private System.Windows.Forms.PictureBox picLadderHatch;
+        private System.Windows.Forms.PictureBox picWoodExternal;
+        private System.Windows.Forms.PictureBox picStoneExternal;
         private System.Windows.Forms.PictureBox picRocket;
         private System.Windows.Forms.PictureBox picBeancan;
         private System.Windows.Forms.PictureBox picF1;
@@ -543,6 +519,16 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         public System.Windows.Forms.PictureBox picC4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
     }
 }
 
