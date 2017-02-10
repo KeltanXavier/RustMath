@@ -320,6 +320,7 @@
             this.picBeancan.Size = new System.Drawing.Size(63, 60);
             this.picBeancan.TabIndex = 23;
             this.picBeancan.TabStop = false;
+            this.picBeancan.Click += new System.EventHandler(this.picBeancan_Click);
             // 
             // picF1
             // 
@@ -329,6 +330,7 @@
             this.picF1.Size = new System.Drawing.Size(63, 60);
             this.picF1.TabIndex = 24;
             this.picF1.TabStop = false;
+            this.picF1.Click += new System.EventHandler(this.picF1_Click);
             // 
             // picSatchel
             // 
@@ -338,6 +340,7 @@
             this.picSatchel.Size = new System.Drawing.Size(63, 60);
             this.picSatchel.TabIndex = 25;
             this.picSatchel.TabStop = false;
+            this.picSatchel.Click += new System.EventHandler(this.picSatchel_Click);
             // 
             // lblC4
             // 

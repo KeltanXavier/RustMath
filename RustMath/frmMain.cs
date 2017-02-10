@@ -180,5 +180,26 @@ namespace RustMath
             frmMain frm = new frmMain();
             (new frmRocket()).ShowDialog();
         }
+
+        private void picSatchel_Click(object sender, EventArgs e)
+        {
+            sendAmount = Convert.ToInt32(lblSatchelCharge.Text);
+            frmMain frm = new frmMain();
+            (new frmSatchel()).ShowDialog();
+        }
+
+        private void picF1_Click(object sender, EventArgs e)
+        {
+            sendAmount = Convert.ToInt32(lblF1.Text);
+            frmMain frm = new frmMain();
+            (new frmF1()).ShowDialog();
+        }
+
+        private void picBeancan_Click(object sender, EventArgs e)
+        {
+            sendAmount = Convert.ToInt32(lblBean.Text);
+            frmMain frm = new frmMain();
+            (new frmBean()).ShowDialog();
+        }
     }
 }

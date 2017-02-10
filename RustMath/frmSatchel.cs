@@ -10,46 +10,41 @@ using System.Windows.Forms;
 
 namespace RustMath
 {
-    public partial class frmC4 : Form
+    public partial class frmSatchel : Form
     {
-        public frmC4()
+        public frmSatchel()
         {
             InitializeComponent();
         }
         /*
-         * Variables
-         */
+        * Variables
+        */
         int receiveAmount = 0;
-        int sulfur = 2200;
-        int charcoal = 3000;
-        int metalFrag = 200;
-        int animalFat = 180;
-        int cloth = 5;
-        int techTrash = 3;
-
+        int sulfur = 480;
+        int charcoal = 720;
+        int metalFrag = 80;
+        int cloth = 10;
         /*
-         * Functions
-         */ 
-        public void CalcResources()
+        * Functions/Methods
+        */
+        private void CalcResources() // receives amount of explosive from frmMain and calcs the resources required
         {
-            receiveAmount = frmMain.sendAmount; //receives number of explosives from frmMain
+            receiveAmount = frmMain.sendAmount;
             lblSulfur.Text = Convert.ToString(receiveAmount * sulfur);
             lblCharcoal.Text = Convert.ToString(receiveAmount * charcoal);
             lblMetalFrag.Text = Convert.ToString(receiveAmount * metalFrag);
-            lblAnimalFat.Text = Convert.ToString(receiveAmount * animalFat);
             lblCloth.Text = Convert.ToString(receiveAmount * cloth);
-            lblTechTrash.Text = Convert.ToString(receiveAmount * techTrash);
         }
-        private void frmC4_Load(object sender, EventArgs e)
+
+
+        private void frmSatchel_Load(object sender, EventArgs e)
         {
-           //DEBUGGING ONLY MessageBox.Show(receiveAmount.ToString());
             CalcResources();
         }
 
         private void cmdBack_Click(object sender, EventArgs e)
         {
-            this.Close(); //closes frmC4
-
+            this.Close();
         }
     }
 }
